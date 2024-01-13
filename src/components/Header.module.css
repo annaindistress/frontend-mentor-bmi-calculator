@@ -1,0 +1,32 @@
+.header {
+  max-width: 686px;
+  margin-inline: auto;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.logo {
+  display: block;
+  width: 40px;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1160px;
+    padding-top: 75px;
+    padding-bottom: 43px;
+  }
+
+  .logo {
+    width: 64px;
+    margin-left: 0;
+  }
+}
