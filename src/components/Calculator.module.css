@@ -84,10 +84,15 @@
 
 @media (min-width: 1440px) {
   .section {
-    margin-bottom: 86px;
+    margin-bottom: 108px;
+    padding-top: 180px;
   }
 
   .section::before {
     left: 24px;
+  }
+
+  .title {
+    padding-top: 89px;
   }
 }

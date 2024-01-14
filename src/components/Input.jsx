@@ -15,6 +15,7 @@ export default function Input({ id, sizeType, onValueChange, value }) {
         className={styles.input}
         type="number"
         inputMode="numeric"
+        pattern="[0-9]*"
         placeholder="0"
         value={value}
         onChange={(event) => handleInput(sizeType, event.target.value)}

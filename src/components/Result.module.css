@@ -42,8 +42,13 @@
     gap: 0 8px;
   }
 
+  .title {
+    font-size: 24px;
+  }
+
   .result--shown .title {
     margin-bottom: 0;
+    font-size: 16px;
   }
 
   .result--shown .text {
@@ -53,8 +58,13 @@
 
 @media (min-width: 1200px) {
   .result {
+    padding: 28px 24px 30px 32px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+  }
+
+  .result.result--shown {
+    padding: 32px;
   }
 
   .number {
@@ -62,7 +72,12 @@
     letter-spacing: -3.2px;
   }
 
+  .text {
+    margin-top: -9px;
+  }
+
   .result--shown .text {
+    margin-top: 0;
     padding-left: 9px;
   }
 }
