@@ -59,3 +59,43 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.title {
+  margin-top: 0;
+  font-weight: 600;
+  color: var(--color-gunmetal);
+}
+
+.title--m {
+  margin-bottom: 24px;
+  font-size: 24px;
+  letter-spacing: -1.2px;
+}
+
+.title--l {
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -1.6px;
+}
+
+.title--xl {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -2.4px;
+}
+
+@media (min-width: 1200px) {
+  .title--l {
+    margin-bottom: 35px;
+    font-size: 48px;
+    letter-spacing: -2.4px;
+  }
+
+  .title--xl {
+    margin-bottom: 35px;
+    font-size: 64px;
+    letter-spacing: -3.2px;
+  }
+}
