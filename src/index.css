@@ -66,6 +66,12 @@ body {
   color: var(--color-gunmetal);
 }
 
+.title--s {
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
 .title--m {
   margin-bottom: 24px;
   font-size: 24px;
