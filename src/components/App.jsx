@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Calculator from "./Calculator";
+import Guide from "./Guide";
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <Header />
       <main>
         <Calculator />
+        <Guide />
       </main>
     </>
   );

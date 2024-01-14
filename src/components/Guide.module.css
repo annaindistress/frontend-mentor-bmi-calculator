@@ -1,0 +1,133 @@
+.section {
+  padding-top: 475px;
+  background-image: url("/images/man-eating.webp");
+  background-repeat: no-repeat;
+  background-position: center 73px;
+  background-size: auto 354px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 686px;
+  margin-inline: auto;
+  margin-bottom: 72px;
+  padding-inline: 24px;
+}
+
+.text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.list {
+  position: relative;
+  display: grid;
+  gap: 40px;
+  max-width: 365px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  list-style: none;
+}
+
+.list::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 200%;
+  margin-left: -50%;
+  background-image: var(--gradient-secondary);
+  opacity: 0.25;
+}
+
+.item {
+  padding-top: 95px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 64px;
+}
+
+.item--eating {
+  background-image: url("/images/icons/eating.svg");
+}
+
+.item--exercise {
+  background-image: url("/images/icons/exercise.svg");
+}
+
+.item--sleep {
+  background-image: url("/images/icons/sleep.svg");
+}
+
+.description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+    background-position: calc(50% - 246px) 96px;
+    background-size: 435px auto;
+  }
+
+  .container {
+    max-width: 330px;
+    margin-left: 51.3%;
+    margin-bottom: 130px;
+    padding-top: 35px;
+    padding-inline: 0;
+  }
+
+  .list {
+    gap: 39px;
+    max-width: 686px;
+    padding: 60px 0;
+  }
+
+  .item {
+    padding-top: 0;
+    padding-left: 102px;
+    background-position: center left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 247px;
+    background-position: calc(50% - 298px) 65px;
+    background-size: 564px auto;
+  }
+
+  .container {
+    max-width: 465px;
+    margin-left: 58%;
+    margin-bottom: 136px;
+    padding-top: 0;
+  }
+
+  .text {
+    padding-top: 3px;
+  }
+
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1160px;
+    padding-top: 72px;
+    padding-bottom: 96px;
+  }
+
+  .list::before {
+    width: calc(100% + 233px);
+    margin-left: -116px;
+    border-radius: 35px;
+  }
+
+  .item {
+    padding-top: 108px;
+    padding-left: 0;
+    background-position: left top;
+  }
+}
